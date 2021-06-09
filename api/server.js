@@ -14,7 +14,7 @@ server.use('*', (req, res)=>{
 
 server.use((err, req, res, next)=>{ // eslint-disable-line
     res.status(err.status || 500).json({
-        custom: "Something went wrong",
+        custom: 'Something went wrong',
         message: err.message,
       })
 })

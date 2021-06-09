@@ -4,12 +4,14 @@ const getAll = () => {
   return db('cars')
 }
 
-const getById = () => {
-
+const getById = (id) => {
+  return db('cars')
+  .where('car_id', id)
+  .first()
 }
 
 const create = () => {
-
+  
 }
 
 module.exports = { getAll, getById, create}
